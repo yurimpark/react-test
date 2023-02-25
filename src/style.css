@@ -4,16 +4,12 @@
   font-family: "Spoqa Han Sans Neo", "sans-serif";
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-
 .viewport {
+  display: flex;
+  flex-flow: column nowrap;
   width: clamp(320px, 100vw, 800px);
-  margin: auto;
+  height: 568px;
+  margin: 100px auto;
 }
 
 /* Accessibility */
@@ -30,6 +26,10 @@ body {
 }
 
 /* Product */
+
+.product-container img {
+  width: 100%;
+}
 
 .price-container {
   border-bottom: 1px solid #dee0e3;
@@ -261,4 +261,9 @@ body {
 .purchase-btn {
   all: unset;
   margin-top: 14px;
+  width: 100%;
+}
+
+.purchase-btn img {
+  width: 100%;
 }

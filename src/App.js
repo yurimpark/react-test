@@ -47,7 +47,7 @@ export default function App() {
   const isDisabled = counter === 0;
 
   return (
-    <div>
+    <div className="viewport">
       <Product />
       <Delivery />
       <CounterButton
