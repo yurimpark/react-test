@@ -1,29 +1,13 @@
 import React from "react";
-
-const PurchaseButton = ({
-  isHovering,
-  handleMouseOver,
-  handleMouseOut,
-  isDisabled,
-}) => {
+const PurchaseButton = ({ isDisabled }) => {
   return (
     <div>
       <button
-        className="purchase-btn"
-        style={{ cursor: isDisabled ? "not-allowed" : "pointer" }}
+        type="button"
+        aria-label="구매하기버튼"
+        className={isDisabled ? "purchase-btn-disabled" : "purchase-btn"}
       >
-        <img
-          onMouseOver={handleMouseOver}
-          onMouseOut={handleMouseOut}
-          src={
-            isDisabled
-              ? "img/Disabled.svg"
-              : isHovering
-              ? "img/PurchaseButtonOn.svg"
-              : "img/PurchaseButtonOff.svg"
-          }
-          alt="구매하기버튼"
-        />
+        구매하기
       </button>
     </div>
   );
