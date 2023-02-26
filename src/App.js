@@ -19,7 +19,6 @@ import {
 
 export default function App() {
   const [counter, setCounter] = useState(1);
-  const [isHovering, setIsHovering] = useState(false);
   const [btnDisabled, setBtnDisabled] = useState(false);
   const productPrice = 6370;
   let totalPrice = (counter * productPrice).toLocaleString();
@@ -36,14 +35,6 @@ export default function App() {
     }
   };
 
-  const handleMouseOver = () => {
-    setIsHovering(true);
-  };
-
-  const handleMouseOut = () => {
-    setIsHovering(false);
-  };
-
   const isDisabled = counter === 0;
 
   return (
@@ -55,18 +46,14 @@ export default function App() {
         decrease={decrease}
         counter={counter}
         btnDisabled={btnDisabled}
+        isDisabled={isDisabled}
       />
       <Total
         counter={counter}
         productPrice={productPrice}
         totalPrice={totalPrice}
       />
-      <PurchaseButton
-        isHovering={isHovering}
-        handleMouseOver={handleMouseOver}
-        handleMouseOut={handleMouseOut}
-        isDisabled={isDisabled}
-      />
+      <PurchaseButton isDisabled={isDisabled} />
     </div>
   );
 }
