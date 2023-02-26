@@ -15,8 +15,9 @@
 /* Accessibility */
 
 .a11y,
-.counter-btn::before,
-.help-btn::before {
+.help-btn::before,
+.minus::before,
+.plus::before {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -259,11 +260,53 @@
 /* PurchaseButton */
 
 .purchase-btn {
-  all: unset;
-  margin-top: 14px;
   width: 100%;
+  height: 48px;
+  margin-top: 14px;
+  background-color: #03c75a;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  border: none;
+  cursor: pointer;
 }
 
-.purchase-btn img {
+.purchase-btn:hover {
+  background-color: #0aae4f;
+}
+
+.purchase-btn::before {
+  content: "";
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  margin-right: 8px;
+  background: url("/public/img/IconNaver.svg") no-repeat;
+  vertical-align: -8px;
+}
+
+.purchase-btn-disabled {
   width: 100%;
+  height: 48px;
+  margin-top: 14px;
+  background-color: #dee0e3;
+  border-radius: 6px;
+  color: #999999;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  border: none;
+  cursor: not-allowed;
+}
+
+.purchase-btn-disabled::before {
+  content: "";
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  margin-right: 8px;
+  background: url("/public/img/IconNaverDisabled.svg") no-repeat;
+  vertical-align: -8px;
 }
