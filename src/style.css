@@ -285,6 +285,7 @@
   margin-right: 8px;
   background: url("/public/img/IconNaver.svg") no-repeat;
   vertical-align: -8px;
+  z-index: 100;
 }
 
 .purchase-btn-disabled {
@@ -309,4 +310,5 @@
   margin-right: 8px;
   background: url("/public/img/IconNaverDisabled.svg") no-repeat;
   vertical-align: -8px;
+  z-index: 100;
 }
