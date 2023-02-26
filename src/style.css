@@ -1,7 +1,7 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 
 * {
-  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
 }
 
 .viewport {
@@ -97,7 +97,7 @@
 }
 
 .delivery-method::after {
-  content: '|';
+  content: "|";
   margin-left: 5px;
   margin-right: 5px;
   color: #dee0e3;
@@ -154,11 +154,11 @@
 }
 
 .minus::before {
-  content: '수량빼기버튼';
+  content: "수량빼기버튼";
 }
 
 .plus::before {
-  content: '수량더하기버튼';
+  content: "수량더하기버튼";
 }
 
 .counter-btn:hover {
@@ -212,7 +212,7 @@
 }
 
 .help-btn::before {
-  content: '도움말버튼';
+  content: "도움말버튼";
 }
 
 .help-btn:hover {
@@ -242,7 +242,7 @@
 }
 
 .total-quantity::after {
-  content: '|';
+  content: "|";
   margin-left: 5px;
   margin-right: 5px;
   color: #dee0e3;
@@ -278,14 +278,13 @@
 }
 
 .purchase-btn::before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 28px;
   height: 28px;
   margin-right: 8px;
-  background: url('../public/img/Icon.svg');
+  background: url("../public/img/Icon.svg");
   vertical-align: -8px;
-  z-index: 100;
 }
 
 .purchase-btn-disabled {
@@ -303,12 +302,11 @@
 }
 
 .purchase-btn-disabled::before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 28px;
   height: 28px;
   margin-right: 8px;
-  background: url('../public/img/IconDisabled.svg');
+  background: url("../public/img/IconDisabled.svg");
   vertical-align: -8px;
-  z-index: 100;
 }
